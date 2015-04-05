@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get 'index' => 'posts#index'
+  get 'first_post' => 'posts#index'
+  get 'first_comment' => 'comments#index'
 end
