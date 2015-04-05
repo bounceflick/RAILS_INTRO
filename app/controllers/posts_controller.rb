@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
   def index
-    "HEY"
+    render json: Post.all, root: false
   end
 end
