@@ -5,6 +5,7 @@ class CommentsController < ApplicationController
 
   def create
     comment = Comment.new(params)
+    p params
     if comment.save
       render json: comment, status: 200
     else
